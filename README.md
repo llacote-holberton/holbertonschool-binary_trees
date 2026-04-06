@@ -13,10 +13,9 @@ This directory will be used to learn about binary trees, how to use them and why
 - You are allowed to use the standard library
 - In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don't have to push them to your repo 
    (if you do we - won't take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-- The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
+- The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called binary_trees.h
 - Don't forget to push your header file
 - You do not need to learn about pointers to functions, pointers to pointers, multidimensional arrays, arrays of structures, malloc and free - yet.
-
 
 # Exercises
 
@@ -41,3 +40,45 @@ This directory will be used to learn about binary trees, how to use them and why
 | 16. Is perfect            | 16-binary_tree_is_perfect.c     | int binary_tree_is_perfect(const binary_tree_t *tree);                     |
 | 17. Sibling               | 17-binary_tree_sibling.c        | binary_tree_t *binary_tree_sibling(binary_tree_t *node);                   |
 | 18. Uncle                 | 18-binary_tree_uncle.c          | binary_tree_t *binary_tree_uncle(binary_tree_t *node);                     |
+
+# Resources
+
+The following are provided to help implement the tasks.
+
+## Structures
+
+### Basic Binary Tree
+```
+/**
+ * struct binary_tree_s - Binary tree node
+ *
+ * @n: Integer stored in the node
+ * @parent: Pointer to the parent node
+ * @left: Pointer to the left child node
+ * @right: Pointer to the right child node
+ */
+struct binary_tree_s
+{
+    int n;
+    struct binary_tree_s *parent;
+    struct binary_tree_s *left;
+    struct binary_tree_s *right;
+};
+
+typedef struct binary_tree_s binary_tree_t;
+```
+
+### Binary Search Tree
+`typedef struct binary_tree_s bst_t;`
+
+### AVL Tree
+`typedef struct binary_tree_s avl_t;`
+
+### Max Binary Heap
+`typedef struct binary_tree_s heap_t;`
+
+## Functions
+A function named binary_tree_print from this project to help visualize trees.
+https://github.com/hs-hq/0x1C.c
+
+NOTE: this function may be included into the repository as a helper to facilitate development.
