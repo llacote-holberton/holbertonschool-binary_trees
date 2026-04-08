@@ -53,7 +53,7 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 /* BinTrees - Exo 08 - 8-binary_tree_postorder.c */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 /* BinTrees - Exo 09 - 9-binary_tree_height.c */
-
+size_t binary_tree_height(const binary_tree_t *tree);
 /* BinTrees - Exo 10 - 10-binary_tree_depth.c */
 
 /* BinTrees - Exo 11 - 11-binary_tree_size.c */
