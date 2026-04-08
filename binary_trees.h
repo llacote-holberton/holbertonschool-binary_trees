@@ -49,7 +49,7 @@ int binary_tree_is_root(const binary_tree_t *node);
 /* BinTrees - Exo 06 - 6-binary_tree_preorder.c */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 /* BinTrees - Exo 07 - 7-binary_tree_inorder.c */
-
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 /* BinTrees - Exo 08 - 8-binary_tree_postorder.c */
 
 /* BinTrees - Exo 09 - 9-binary_tree_height.c */
