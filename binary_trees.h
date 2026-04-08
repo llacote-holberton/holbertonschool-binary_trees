@@ -30,6 +30,8 @@ typedef struct binary_tree_s avl_t;
 /* Max Binary Heapt variant */
 typedef struct binary_tree_s heap_t;
 
+/* Provided function to make visualization easier */
+void binary_tree_print(const binary_tree_t *);
 /* === Exercises prototypes === */
 
 /* BinTrees - Exo 00 - 0-binary_tree_node.c */
