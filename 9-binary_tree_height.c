@@ -15,9 +15,9 @@
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	 unsigned int height  = 0;
-	 unsigned int left_h  = 0;
-	 unsigned int right_h = 0;
+	 size_t height  = 0;
+	 size_t left_h  = 0;
+	 size_t right_h = 0;
 
 	/* To avoid messing up by mixing while loops in recursive func */
 	if (!tree || (!tree->left && !tree->right))
