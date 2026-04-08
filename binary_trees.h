@@ -57,7 +57,7 @@ size_t binary_tree_height(const binary_tree_t *tree);
 /* BinTrees - Exo 10 - 10-binary_tree_depth.c */
 size_t binary_tree_depth(const binary_tree_t *tree);
 /* BinTrees - Exo 11 - 11-binary_tree_size.c */
-
+size_t binary_tree_size(const binary_tree_t *tree);
 /* BinTrees - Exo 12 - 12-binary_tree_leaves.c */
 
 /* BinTrees - Exo 13 - 13-binary_tree_nodes.c */
