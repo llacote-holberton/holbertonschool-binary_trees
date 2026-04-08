@@ -61,7 +61,7 @@ size_t binary_tree_size(const binary_tree_t *tree);
 /* BinTrees - Exo 12 - 12-binary_tree_leaves.c */
 size_t binary_tree_leaves(const binary_tree_t *tree);
 /* BinTrees - Exo 13 - 13-binary_tree_nodes.c */
-
+size_t binary_tree_nodes(const binary_tree_t *tree);
 /* BinTrees - Exo 14 - 14-binary_tree_balance.c */
 
 /* BinTrees - Exo 15 - 15-binary_tree_is_full.c */
