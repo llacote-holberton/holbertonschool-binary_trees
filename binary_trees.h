@@ -67,7 +67,7 @@ int binary_tree_balance(const binary_tree_t *tree);
 /* BinTrees - Exo 15 - 15-binary_tree_is_full.c */
 int binary_tree_is_full(const binary_tree_t *tree);
 /* BinTrees - Exo 16 - 16-binary_tree_is_perfect.c */
-
+int binary_tree_is_perfect(const binary_tree_t *tree);
 /* BinTrees - Exo 17 - 17-binary_tree_sibling.c */
 
 /* BinTrees - Exo 18 - 18-binary_tree_uncle.c */
