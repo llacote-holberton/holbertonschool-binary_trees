@@ -41,7 +41,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 /* BinTrees - Exo 02 - 2-binary_tree_insert_right.c */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 /* BinTrees - Exo 03 - 3-binary_tree_delete.c */
-
+void binary_tree_delete(binary_tree_t *tree);
 /* BinTrees - Exo 04 - 4-binary_tree_is_leaf.c */
 
 /* BinTrees - Exo 05 - 5-binary_tree_is_root.c */
