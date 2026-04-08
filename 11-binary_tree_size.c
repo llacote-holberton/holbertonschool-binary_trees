@@ -15,11 +15,14 @@ size_t binary_tree_size(const binary_tree_t *tree)
 {
 	unsigned int count = 0;
 
-	count = (tree) ? 1 : 0;
-	if (tree->left)
-		count += binary_tree_size(tree->left);
-	if (tree->right)
-		count += binary_tree_size(tree->right);
+	if (tree)
+	{
+		count = 1;
+		if (tree->left)
+			count += binary_tree_size(tree->left);
+		if (tree->right)
+			count += binary_tree_size(tree->right);
+	}
 
 	return (count);
 }
