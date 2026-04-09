@@ -24,9 +24,9 @@ int evaluate_btree_height(binary_tree_t *tree)
 	/* Parent doesn't even exist should NOT have the same weight. */
 	/* if (!tree || (!tree->left && !tree->right)) return (0); */
 	if (!tree)
-		return (-1);
-	if (!tree->left && !tree->right)
 		return (0);
+	if (!tree->left && !tree->right)
+		return (1);
 
 	h_left = evaluate_btree_height(tree->left);
 	h_right = evaluate_btree_height(tree->right);
@@ -55,8 +55,10 @@ int binary_tree_balance(const binary_tree_t *tree)
 	/* "left height - right height" and return it.   */
 	/* So we reuse logic from exo 09 BUT apply it to */
 	/* two different "roots" (root children) successively. */
-	 left_height  = evaluate_btree_height(tree->left);
-	 right_height = evaluate_btree_height(tree->right);
+	if (!tree)
+		return (0);
+	left_height  = evaluate_btree_height(tree->left);
+	right_height = evaluate_btree_height(tree->right);
 	/* @warning: node with 1 child must be heavier than one without!*/
 	return (left_height - right_height);
 }
