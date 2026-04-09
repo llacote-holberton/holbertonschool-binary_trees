@@ -17,7 +17,8 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (!tree || !func)
 		return;
-	printf("%d\n", tree->n);
+    
+	func(tree->n);
 	/* Preorder traversal means we all "all left first starting with root".*/
 	if (tree->left)
 		binary_tree_preorder(tree->left, func);
