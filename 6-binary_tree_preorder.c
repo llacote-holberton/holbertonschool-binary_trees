@@ -1,0 +1,27 @@
+#include <stddef.h>        /* Required for NULL.   */
+#include <stdlib.h>        /* Required for malloc. */
+#include <stdio.h>         /* Required for printf. */
+#include "binary_trees.h"
+
+/**
+ * binary_tree_preorder - Processes func on tree "left + top down".
+ * @tree: tree to traverse fully.
+ * @func: function to call upon each found node.
+ * Return: nothing.
+ *
+ * NOTES:
+ * If tree or func is NULL, do nothing.
+ *
+ */
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
+{
+	if (!tree || !func)
+		return;
+	printf("%d\n", tree->n);
+	/* Preorder traversal means we all "all left first starting with root".*/
+	if (tree->left)
+		binary_tree_preorder(tree->left, func);
+	if (tree->right)
+		binary_tree_preorder(tree->right, func);
+}
+
